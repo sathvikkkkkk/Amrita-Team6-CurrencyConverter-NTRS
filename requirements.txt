@@ -1,7 +1,6 @@
 streamlit
 pandas==0.20.0
 streamlit-option-menu
-itertools
-datetime
+itertools==8.4.0
 numpy==1.10.0
 statsmodels
