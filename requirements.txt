@@ -1,3 +1,4 @@
+pip
 streamlit
 pandas==0.20.0
 streamlit-option-menu
