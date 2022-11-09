@@ -358,6 +358,8 @@ if choose == "Monthly":
         # chart_data.sort_values(by=[dateArray])
 
         st.line_chart(chart_data, x='date', y='currency')
+        st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
+        st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
         # st.pyplot(currencyArray)
 
 elif choose == "Quarterly":
@@ -431,6 +433,8 @@ elif choose == "Quarterly":
         # st.line_chart(chart_data, x=sorted(dateArray, key=lambda m: datetime.strptime(m, "%d-%b-%y")), y='currency')
         # st.pyplot(currencyArray)
         st.line_chart(chart_data, x='date', y='currency')
+        st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
+        st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
 
 elif choose == "Half Yearly":
     st.title("Half Yearly Report of a Currency")
@@ -503,6 +507,8 @@ elif choose == "Half Yearly":
         # st.line_chart(chart_data, x=sorted(dateArray, key=lambda m: datetime.strptime(m, "%d-%b-%y")), y='currency')
         # st.pyplot(currencyArray)
         st.line_chart(chart_data, x='date', y='currency')
+        st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
+        st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
 
 elif choose == "Annual":
     st.title("Annual Report of a Currency")
@@ -573,6 +579,8 @@ elif choose == "Annual":
 
         st.line_chart(chart_data.rename(columns={'date': 'index'}).set_index('index'))
         # st.pyplot(currencyArray)
+        st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
+        st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
 
 elif choose == "Custom Timeline":
     st.title("Customized Report on Time Interval")
@@ -651,6 +659,8 @@ elif choose == "Custom Timeline":
 
     st.line_chart(chart_data.rename(columns={'date': 'index'}).set_index('index'))
     # st.pyplot(currencyArray)
+    st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
+    st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
 
 elif choose == "Next Day Prediction":
     st.title("Prediction of Currency on Next Day")
