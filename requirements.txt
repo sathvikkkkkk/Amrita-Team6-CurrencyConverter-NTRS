@@ -1,5 +1,0 @@
-pandas==0.20.0
-streamlit-option-menu
-numpy
-statsmodels
-python -m pip install --upgrade pip
