@@ -1,0 +1,7 @@
+streamlit
+pandas
+os
+itertools
+datetime
+numpy
+statsmodels
