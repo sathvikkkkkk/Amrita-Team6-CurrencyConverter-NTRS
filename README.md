@@ -12,21 +12,52 @@ Used Python and Streamlit to deploy the local app of Currency Converter
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Python
+* Streamlit
+* streamlit 
+* pandas 
+* os 
+* itertools 
+* datetime 
+* numpy 
+* statsmodels
+* machine learning libraries
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Download/Clone the repo by using 
+```
+git clone https://github.com/sathvikkkkkk/Amrita-Team6-CurrencyConverter-NTRS
+```
+* Change the terminal directory to current folder
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Make sure to check all the requirements from the 'requirements.txt'
+* Install by using
 ```
-code blocks for commands
+pip install requirements.txt 
 ```
+* First, open terminal and change directory to current project folder
+```
+cd Amrita-Team6-CurrencyConverter-NTRS
+```
+* Run the app.py using streamlit
+```
+streamlit run app.py
+```
+* Will give an output as following:
+```
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://172.31.27.184:8501
+
+  For better performance, install the Watchdog module:
+
+```
+* Click on the Local / Global URL to start using the Web App
 
 ## Help
 
