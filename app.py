@@ -22,7 +22,6 @@ for fileName in fileNames:
 newDir = r"/Users/sathvikjammula/PycharmProjects/Hackathon/New Data"
 newFilePaths = []
 for file in filePaths:
-    # eliminateNull(newDir, file, file.split("//")[-1])
     newFilePaths.append(join(newDir, file.split("//")[-1]))
     print(file.split("/")[-1])
 
@@ -351,16 +350,13 @@ if choose == "Monthly":
             day = date.split('-')
             if len(day[0]) == 1:
                 dateArray[dateArray.index(date)] = "0" + date
-        # st.write(obtainMonthlyReport(year, month, option2))
         chart_data = pd.DataFrame(
             list(zip(currencyArray, dateArray)), columns=['currency', 'date']
         )
-        # chart_data.sort_values(by=[dateArray])
-
         st.line_chart(chart_data, x='date', y='currency')
         st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
         st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
-        # st.pyplot(currencyArray)
+
 
 elif choose == "Quarterly":
     st.title("Quarterly Report of a Currency")
@@ -373,7 +369,6 @@ elif choose == "Quarterly":
     url = "https://www.google.com/search?q=" + optionStr
     st.write('Base Currency : ' + option1)
     st.write(" [Know more](%s) " % url)
-
     option2 = st.selectbox(
 
         'Currency To be Compared into',
@@ -408,7 +403,7 @@ elif choose == "Quarterly":
     st.write('You selected : ' + option2)
     st.write(" [Know more](%s) " % url)
     col1, col2 = st.columns([0.8, 0.2])
-    with col1:  # To display the header text using css style
+    with col1:
         st.markdown(""" <style> .font {
             font-size:35px ; font-family: 'Cooper Black'; color: #54B1E7;} 
             </style> """, unsafe_allow_html=True)
@@ -423,15 +418,10 @@ elif choose == "Quarterly":
             day = date.split('-')
             if len(day[0]) == 1:
                 dateArray[dateArray.index(date)] = "0" + date
-        # st.write(obtainMonthlyReport(year, month, option2))
         chart_data = pd.DataFrame(
             list(zip(currencyArray, dateArray)), columns=['currency', 'date']
         )
-        # chart_data.sort_values(by=[dateArray])
         chart_data['date'] = pd.to_datetime(chart_data['date'])
-        # st.write(chart_data)
-        # st.line_chart(chart_data, x=sorted(dateArray, key=lambda m: datetime.strptime(m, "%d-%b-%y")), y='currency')
-        # st.pyplot(currencyArray)
         st.line_chart(chart_data, x='date', y='currency')
         st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
         st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
@@ -482,7 +472,7 @@ elif choose == "Half Yearly":
     st.write('You selected : ' + option2)
     st.write(" [Know more](%s) " % url)
     col1, col2 = st.columns([0.8, 0.2])
-    with col1:  # To display the header text using css style
+    with col1:
         st.markdown(""" <style> .font {
             font-size:35px ; font-family: 'Cooper Black'; color: #54B1E7;} 
             </style> """, unsafe_allow_html=True)
@@ -497,15 +487,10 @@ elif choose == "Half Yearly":
             day = date.split('-')
             if len(day[0]) == 1:
                 dateArray[dateArray.index(date)] = "0" + date
-        # st.write(obtainMonthlyReport(year, month, option2))
         chart_data = pd.DataFrame(
             list(zip(currencyArray, dateArray)), columns=['currency', 'date']
         )
-        # chart_data.sort_values(by=[dateArray])
         chart_data['date'] = pd.to_datetime(chart_data['date'])
-        # st.write(chart_data)
-        # st.line_chart(chart_data, x=sorted(dateArray, key=lambda m: datetime.strptime(m, "%d-%b-%y")), y='currency')
-        # st.pyplot(currencyArray)
         st.line_chart(chart_data, x='date', y='currency')
         st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
         st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
@@ -570,15 +555,11 @@ elif choose == "Annual":
             day = date.split('-')
             if len(day[0]) == 1:
                 dateArray[dateArray.index(date)] = "0" + date
-        # st.write(obtainMonthlyReport(year, month, option2))
         chart_data = pd.DataFrame(
             list(zip(currencyArray, dateArray)), columns=['currency', 'date']
         )
         chart_data['date'] = pd.to_datetime(chart_data['date'])
-        # chart_data.sort_values(by=[dateArray])
-
         st.line_chart(chart_data.rename(columns={'date': 'index'}).set_index('index'))
-        # st.pyplot(currencyArray)
         st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
         st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
 
@@ -633,7 +614,7 @@ elif choose == "Custom Timeline":
     st.markdown('<p class="font">Select the Month and Year</p>', unsafe_allow_html=True)
     col1, col2 = st.columns([0.5, 0.5])
 
-    with col1:  # To display the header text using css style
+    with col1:
 
         frommonth = st.selectbox('From Month',
                                  ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
@@ -650,21 +631,16 @@ elif choose == "Custom Timeline":
         day = date.split('-')
         if len(day[0]) == 1:
             dateArray[dateArray.index(date)] = "0" + date
-    # st.write(obtainMonthlyReport(year, month, option2))
     chart_data = pd.DataFrame(
         list(zip(currencyArray, dateArray)), columns=['currency', 'date']
     )
     chart_data['date'] = pd.to_datetime(chart_data['date'])
-    # chart_data.sort_values(by=[dateArray])
-
     st.line_chart(chart_data.rename(columns={'date': 'index'}).set_index('index'))
-    # st.pyplot(currencyArray)
     st.write("Minimum exchange rate", str(minRate), " on ", str(minDate))
     st.write("Maximum exchange rate", str(maxRate), " on ", str(maxDate))
 
 elif choose == "Next Day Prediction":
     st.title("Prediction of Currency on Next Day")
-
     option2 = st.selectbox(
 
         'Currency To be Predicted',
@@ -694,11 +670,8 @@ elif choose == "Next Day Prediction":
     for option in option2Array:
         optionStr = optionStr + option + "+"
     optionStr = optionStr[0:len(optionStr) - 1]
-
     url = "https://www.google.com/search?q=" + optionStr
     st.write('You selected : ' + option2 + " [Know more](%s) " % url)
-
-
     convVal = followingDayPrediction(option2)
     convVal = str(convVal)
     st.write("Predicted Value of ", option2, " in USD ", convVal)
@@ -775,7 +748,6 @@ else:
     value1 = st.text_input(option1, 1)
     value1int = int(float(value1))
     convVal = convertCurrency(value1int, option1, option2)
-    # st.write(convVal)
     conValStr = str(convVal)
 
     st.markdown("""
