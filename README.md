@@ -62,10 +62,17 @@ streamlit run app.py
 
 ## Authors
 
-Contributors names and contact info
+Contributors names and contact info:
 
-ex. Dominique Pizzie  
-ex. [Sathvik Jammula](https://twitter.com/dompizzie)
+
+
+## Contributors
+- [Jammula Durga Bala Sathvik](https://github.com/sathvikkkkkk/) sathvik6916@gmail.com
+- Kavya Duvvuri
+- Kota Venkata Leela Tejaswini
+- Lakshmi V. B.
+- Lakshmi Warrier
+
 
 ## Version History
 
