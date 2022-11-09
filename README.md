@@ -9,7 +9,37 @@ Used for Currency Conversion, getting maximum and minimum values of currency at 
 Used Python and Streamlit to deploy the local app of Currency Converter
 
 ## Getting Started
+## Features
 
+### Get conversion of any currency to any other currency
+* The user has to select the required two required currencies and the amount to be converted
+* The graph is displayed with the selected currency in terms of USD on the y-axis and the dates on the x-axis
+
+### Get monthly analysis of a selected currency
+* The user has to select the required currency and the required month to obtain the monthly report
+* The graph is displayed with the selected currency in terms of USD on the y-axis and the dates on the x-axis
+
+### Get quarterly analysis of a selected currency
+* The user has to select the required currency and the required month to obtain the report three months from then
+* The graph is displayed with the selected currency in terms of USD on the y-axis and the dates on the x-axis
+
+### Get half-yearly analysis of a selected currency
+* The user has to select the required currency and the required month to obtain the report six months from then
+* The graph is displayed with the selected currency in terms of USD on the y-axis and the dates on the x-axis
+
+### Get annual analysis of a selected currency
+* The user has to select the required currency and the required month to obtain the report one year months from then
+* The graph is displayed with the selected currency in terms of USD on the y-axis and the dates on the x-axis
+
+### Get the prediction of the next day exchange rate of a selected currency
+* The user has to select the required currency
+* The predicted value of the currency is displayed 
+* The prediction is done using ARIMA model
+
+## Assumptions
+ 
+ * The null cells in the dataset are populated with the nearest non null values
+ * Annual report is generated only for a single complete year (Jan to Dec of a given year)
 ### Dependencies
 
 * Python
