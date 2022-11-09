@@ -59,19 +59,13 @@ streamlit run app.py
 ```
 * Click on the Local / Global URL to start using the Web App
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
 Contributors names and contact info
 
 ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. [Sathvik Jammula](https://twitter.com/dompizzie)
 
 ## Version History
 
