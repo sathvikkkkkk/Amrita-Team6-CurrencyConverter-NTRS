@@ -2,5 +2,5 @@ pip
 streamlit
 pandas==0.20.0
 streamlit-option-menu
-numpy==1.10.0
+numpy
 statsmodels
