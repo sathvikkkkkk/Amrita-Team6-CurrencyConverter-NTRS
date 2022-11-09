@@ -60,37 +60,9 @@ streamlit run app.py
 * Click on the Local / Global URL to start using the Web App
 
 
-## Authors
-
-Contributors names and contact info:
-
-
-
-## Contributors
-- [Jammula Durga Bala Sathvik](https://github.com/sathvikkkkkk/) sathvik6916@gmail.com
+## Contributors/Authors
+- [Jammula Durga Bala Sathvik](https://github.com/sathvikkkkkk/)
 - Kavya Duvvuri
 - Kota Venkata Leela Tejaswini
 - Lakshmi V. B.
 - Lakshmi Warrier
-
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)

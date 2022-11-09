@@ -12,7 +12,7 @@ from statsmodels.tsa.arima.model import ARIMA
 
 
 # Reading all the files from the given input directory
-dirPath = r"/Users/sathvikjammula/PycharmProjects/Hackathon/Currency_Conversion_Test_Data"
+dirPath = r"/Currency_Conversion_Test_Data"
 fileNames = listdir(dirPath)
 
 filePaths = []
@@ -20,7 +20,7 @@ for fileName in fileNames:
     if isfile(join(dirPath, fileName)):
         filePaths.append(join(dirPath, fileName))
 
-newDir = r"/Users/sathvikjammula/PycharmProjects/Hackathon/New Data"
+newDir = r"/New Data"
 newFilePaths = []
 for file in filePaths:
     newFilePaths.append(join(newDir, file.split("//")[-1]))
