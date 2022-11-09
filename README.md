@@ -89,12 +89,19 @@ streamlit run app.py
 ```
 * Click on the Local / Global URL to start using the Web App
 ## Website Screenshots
+* Gives Present Day Forex Exchange Rates
 ![Image](./Images/Present.png "")
+* Gives Monthly Report
 ![Image](./Images/Monthly.png "")
+* Gives Quarterly Report
 ![Image](./Images/Quarterly.png "")
+* Gives Half Yearly Report
 ![Image](./Images/HalfYear.png "")
+* Gives Annual Report
 ![Image](./Images/Annual.png "")
+* Gives Custom Time Period Report
 ![Image](./Images/Custom.png "")
+* Gives Machine Learning Prediction of FOREX of Next Day
 ![Image](./Images/pred.png "")
 
 
