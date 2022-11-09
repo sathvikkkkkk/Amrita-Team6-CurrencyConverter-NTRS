@@ -12,7 +12,7 @@ from statsmodels.tsa.arima.model import ARIMA
 
 
 # Reading all the files from the given input directory
-dirPath = r"/Currency_Conversion_Test_Data/"
+dirPath = r"/Amrita-Team6-CurrencyConverter-NTRS/Currency_Conversion_Test_Data/"
 fileNames = listdir(dirPath)
 
 filePaths = []
