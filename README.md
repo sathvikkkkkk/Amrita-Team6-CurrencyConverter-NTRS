@@ -89,6 +89,16 @@ streamlit run app.py
 ```
 * Click on the Local / Global URL to start using the Web App
 ## Website Screenshots
+![Image](./Images/Present.png "")
+![Image](./Images/Monthly.png "")
+![Image](./Images/Quarterly.png "")
+![Image](./Images/HalfYear.png "")
+![Image](./Images/Annual.png "")
+![Image](./Images/Custom.png "")
+![Image](./Images/pred.png "")
+
+
+
 
 
 ## Contributors/Authors
