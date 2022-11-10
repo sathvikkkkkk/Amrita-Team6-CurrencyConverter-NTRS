@@ -102,7 +102,7 @@ streamlit run app.py
 * Gives Custom Time Period Report
 ![Image](./Images/Custom.png "")
 * Gives Machine Learning Prediction of FOREX of Next Day
-![Image](./Images/pred.png "")
+![Image](./Images/Pred.png "")
 
 
 
